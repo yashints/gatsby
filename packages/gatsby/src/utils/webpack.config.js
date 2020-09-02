@@ -164,9 +164,7 @@ module.exports = async (
         return {
           polyfill: directoryPath(`.cache/polyfill-entry`),
           commons: [
-            `${require.resolve(
-              `webpack-hot-middleware/client`
-            )}?path=${getHmrPath()}`,
+            // `${require.resolve(`webpack-hot-middleware/client`)}`,
             directoryPath(`.cache/app`),
           ],
         }
