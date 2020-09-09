@@ -26,7 +26,7 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
+    "build": "GATSBY_EXPERIMENTAL_ROUTING_APIS=1 gatsby build",
     "develop": "cross-env GATSBY_EXPERIMENTAL_ROUTING_APIS=1 CYPRESS_SUPPORT=y ENABLE_GATSBY_REFRESH_ENDPOINT=true gatsby develop",
     "serve": "gatsby serve",
     "start": "npm run develop",
